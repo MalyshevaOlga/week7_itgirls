@@ -1,0 +1,54 @@
+.conteiner {
+  display: grid;
+  height: 90vh;
+  width: 100vw;
+  grid-template-rows: 15% 1fr 15%;
+  grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
+}
+
+.header {
+  background-color: gray;
+  grid-area: header;
+}
+
+.main {
+  background-color: orange;
+  grid-area: main;
+}
+
+.sidebar {
+  background-color: green;
+  grid-area: sidebar;
+
+}
+
+.footer {
+  background-color: gray;
+  grid-area: footer;
+}
+
+.box1,
+.box2,
+.box3 {
+  padding: 5px;
+  background-color: antiquewhite;
+  width: max-content;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: end;
+  gap: 10px;
+  height: 10vh;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  height: 10vh;
+}
